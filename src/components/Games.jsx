@@ -23,7 +23,7 @@ const games = [
       genre: 'FPS', 
       titles: [
         { name: 'Call of Duty: Modern Warfare II', img: 'https://upload.wikimedia.org/wikipedia/en/4/4a/Call_of_Duty_Modern_Warfare_II_Key_Art.jpg' },
-        { name: 'DOOM Eternal', img: 'https://upload.wikimedia.org/wikipedia/en/9/9d/Cover_Art_of_Doom_Eternal.png' },
+        { name: 'Call of Duty: Black Ops 6 ', img: 'https://upload.wikimedia.org/wikipedia/en/c/c9/Call_of_Duty_Black_Ops_6_Key_Art.png' },
         { name: 'Battlefield 2042', img: 'https://upload.wikimedia.org/wikipedia/en/e/ec/Battlefield_2042_cover_art.jpg' },
         { name: 'Apex Legends', img: 'https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg' },
         { name: 'Counter-Strike 2', img: 'https://upload.wikimedia.org/wikipedia/en/f/f2/CS2_Cover_Art.jpg' }
