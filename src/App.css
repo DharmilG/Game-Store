@@ -1,0 +1,85 @@
+.app {
+  background-color: rgb(50, 50, 50);
+  height: 200vmax;
+  margin: -8px -8px -8px;
+}
+.navbar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  padding: 0 20px;
+}
+
+.logo img {
+  display: block;
+  padding-right: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none; 
+  color: white;
+  font-weight: 500;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown div {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown div a {
+  display: block;
+  padding: 5px 15px;
+  color: #555;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown div a:hover {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+.dropdown:hover div {
+  display: block;
+}
+/* Media Query for Phones */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header, nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    padding: 10px;
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+}
