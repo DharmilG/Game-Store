@@ -1,4 +1,4 @@
-import '/src/App.css';
+import "/src/App.css";
 const footerLinks = [
   {
     title: "Footer Content",
@@ -24,6 +24,8 @@ export default function Footer() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
+            backgroundColor: "#000",
+            borderRadius: "10px",
           }}
         >
           {footerLinks.map((section, index) => (
@@ -54,7 +56,7 @@ export default function Footer() {
         style={{
           textAlign: "center",
           padding: "10px",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
+          backgroundColor: "#000",
         }}
       >
         © 2026 Copyright
