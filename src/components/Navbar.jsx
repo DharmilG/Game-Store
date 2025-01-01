@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../App.css';
+import '/src/App.css';
 const dropdown_menu = [
   { name: "Action", link: "/" },
   { name: "Adventure", link: "/" },
