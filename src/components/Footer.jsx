@@ -1,4 +1,4 @@
-import "E:/app/src/App.css";
+import './App.css';
 const footerLinks = [
   {
     title: "Footer Content",
