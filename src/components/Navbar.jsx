@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "E:/app/src/App.css";
 const dropdown_menu = [
   { name: "Action", link: "/" },
   { name: "Adventure", link: "/" },
@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link to="/">Categories</Link>
           <Dropdown />
         </div>
-        <Link href="/">Contact</Link>
+        <Link to="/">Contact</Link>
       </div>
     </div>
   );
