@@ -1,5 +1,4 @@
-import { Link, Route, Router, Routes } from "react-router-dom";
-import Details from "./Details";
+import { Link } from "react-router-dom";
 const games = [
   {
     genre: "Action",
@@ -298,7 +297,6 @@ export function Card() {
                     textAlign: "center",
                     margin: "15px 0 0 0",
                   }}
-                  onClick={() => {<Details title={title.name} />}}
                 >
                   {title.name}
                 </Link>
