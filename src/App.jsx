@@ -1,16 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Details from './components/Details'; // Adjust the import path as necessary
-import Home from './Home'; // Your main component where the Link is located
-
+import Navbar from './components/Navbar';
+import Games from './components/Games';
+import Footer from './components/Footer';
+import './App.css';
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/game/:title" element={<Details />} />
-      </Routes>
-    </Router>
+    <>
+      <div className='app'>
+        <Navbar />
+        <Games />
+        <Footer />
+      </div>
+    </>
   );
 }
 
