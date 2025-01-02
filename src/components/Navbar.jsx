@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '/src/App.css';
+import "/src/App.css";
 const dropdown_menu = [
   { name: "Action", link: "/" },
   { name: "Adventure", link: "/" },
@@ -15,9 +15,13 @@ export function Dropdown() {
     <div>
       {dropdown_menu.map((item, index) => {
         return (
-          <a key={index} href={item.link}>
+          <Link
+            key={index}
+            to={item.link}
+            className="dropdown-link"
+          >
             {item.name}
-          </a>
+          </Link>
         );
       })}
     </div>
@@ -25,8 +29,19 @@ export function Dropdown() {
 }
 export default function Navbar() {
   return (
-    <div className="navbar" style={{ height: "55px" }}>
-      <div className="logo">
+    <div
+      className="navbar"
+      style={{
+        height: "55px",
+        fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+        backgroundColor: "rgb(50, 50, 50)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        padding: "0 20px",
+      }}
+    >
+      <div className="logo" style={{ display: "block", paddingRight: "20px" }}>
         <img
           src="https://logosandtypes.com/wp-content/uploads/2020/08/xbox-old.svg"
           height={50}
@@ -34,7 +49,16 @@ export default function Navbar() {
           alt="logo"
         />
       </div>
-      <div className="links">
+      <div
+        className="links"
+        style={{
+          display: "flex",
+          gap: "20px",
+          color: "white",
+          textDecoration: "none",
+          fontWeight: "500",
+        }}
+      >
         <Link to="/">Home</Link>
         <div className="dropdown">
           <Link to="/">Categories</Link>
