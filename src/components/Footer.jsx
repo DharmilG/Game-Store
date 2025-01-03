@@ -17,7 +17,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{ color: "#f1f1f1" }}>
+    <footer style={{ color: "#f1f1f1", backgroundColor:"black" }}>
       <div>
         <div
           style={{
