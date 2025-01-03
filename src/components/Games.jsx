@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../App.css";
 export const games = [
   {
     genre: "Action",
@@ -315,7 +316,7 @@ export function Sidebar() {
         color: "#f1f1f1",
         position: "sticky",
         top: "0",
-        height: "100vh",
+        height: "auto",
         overflowY: "auto",
         boxShadow: "2px 0 5px rgba(0, 0, 0, 0.5)",
       }}
@@ -368,22 +369,52 @@ export function Card() {
             boxShadow: "0 2px 5px rgba(0, 0, 0, 0.3)",
           }}
         >
-          <h3
+          <div
             style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
               marginBottom: "20px",
-              color: "#f1f1f1",
-              fontSize: "24px",
               borderBottom: "2px solid #444",
-              paddingBottom: "5px",
             }}
           >
-            {category.genre} Games
-          </h3>
+            <h3
+              style={{
+                marginBottom: "20px",
+                color: "#f1f1f1",
+                fontSize: "24px",
+                paddingBottom: "5px",
+                position: "relative",
+                cursor: "pointer",
+              }}
+              className="genre-heading"
+            >
+              {category.genre} Games
+            </h3>
+            <h3
+              style={{
+                position: "relative",
+                cursor: "pointer", 
+              }}
+              className="see-all-link"
+            >
+              <Link
+                to="/"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginRight: "10px",
+                }}
+              >
+                See all&gt;
+              </Link>
+            </h3>
+          </div>
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: "20px",
+              gap: "23px",
               justifyContent: "flex-start",
             }}
           >
@@ -414,6 +445,7 @@ export function Card() {
                   }}
                 />
                 <Link
+                  className="game-link"
                   to={`/details/${title.name}`}
                   style={{
                     color: "#f1f1f1",
